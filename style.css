@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+body {
+  font-family: 'Quicksand';
+
+}
+
+.bg-1{
+  background-image: url('assets/backgrounds/landing.jpg');
+}
+
+.white{
+  color: #ffffff;
+  line-height: 0.4;
+  font-weight: lighter;
+}
+
+.margin-top{
+  padding-top: 100px;
+}
+
+.margin-top-little{
+  padding-top: 50px;
+}
+
+.margin{
+  padding-bottom: 70px;
+}
+
+
+
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+
+.navbar-toggle {
+    display: block;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+
+}
+
+.navbar-header {
+    float: none;
+}
+.navbar-toggle {
+    display: block;
+}
+.navbar-collapse.collapse {
+    display: none!important;
+}
+.navbar-collapse.collapse.in {
+    display: block!important;
+}
+.navbar-nav {
+    float: none!important;
+}
+.navbar-nav>li {
+    float: none;
+}
+
+
+.bg-2{
+  background-color: #E4E5E7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.bg-3{
+  background-color: #EE562B;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.bg-4{
+  background-image: url('assets/foodtop/breakfast.jpg');
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bg-5{
+  background-image: url('assets/foodtop/lunch.jpg');
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bg-6{
+  background-image: url('assets/foodtop/dinner.jpg');
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.fastfood{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fastfood1{
+  width: 100%;
+}
+
+.fastfood-content{
+  padding-left:40px;
+}
+.drink{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
