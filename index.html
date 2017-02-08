@@ -2,7 +2,7 @@
 <html>
     <head>
       <meta charset='utf-8'>
-      <link type='text/css' rel='stylesheet' href='css/bootstrap.css'>
+      <link type='text/css' rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
       <link type='text/css' rel='stylesheet' href='style.css'>
       <link type='text/css' rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
       <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
@@ -12,17 +12,17 @@
     </head>
 <body>
 <!--Navbar-->
-<nav class='navbar navbar-inverse navbar-fixed-top'>
-  <button type='button' class='pull-left navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+<nav class='navbar navbar-inverse navbar-fixed-top' style='padding: 50px'>
+  <button type='button' class='pull-left navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse' id='navPress'>
     <span class='sr-only'>Toggle navigation</span>
     <span class='icon-bar'></span>
     <span class='icon-bar'></span>
     <span class='icon-bar'></span>
   </button>
-  <ul class='nav navbar-nav collapse navbar-collapse'>
-    <li><a href='#'>Contacts</a></li>
-    <li><a href='#'>Events</a></li>
-    <li><a href='#'>Menu</a> </li>
+  <ul class='nav navbar-nav collapse navbar-collapse' id='navToggle'>
+    <li><a class='menuItem' href='#'>Contacts</a></li>
+    <li><a class='menuItem' href='#'>Events</a></li>
+    <li><a class='menuItem' href='#'>Menu</a> </li>
   </ul>
 </nav>
 <!--body1-->
@@ -34,21 +34,21 @@
   </div>
 <!--Happy-Hour Party-Time Breakfast Lunch Dinner-->
 <div class='text-center'>
-  <div class='col-sm-3'>
-    <div class='row bg-2'>
+  <div class='col-sm-3 '>
+    <div class='row bg-2 hover'>
         Happy Hour
     </div>
-    <div class='row bg-3'>
+    <div class='row bg-3 hover'>
         Party Time
     </div>
   </div>
-  <div class='col-sm-3 bg-4 text-center'>
+  <div class='col-sm-3 bg-4 text-center hover'>
     Breakfast
   </div>
-  <div class='col-sm-3 bg-5'>
+  <div class='col-sm-3 bg-5 hover'>
     Lunch
   </div>
-  <div class='col-sm-3 bg-6'>
+  <div class='col-sm-3 bg-6 hover'>
     Dinner
   </div>
 </div>
@@ -87,53 +87,42 @@
 </div>
 <!--body-3-->
 <div class='bg-7 container-fluid'>
-  <div class="container margin-top-little">
+  <div class="container margin-top-little" style='padding: 50px'>
     <!--Navtab for Carousel-->
       <div class="col-xs-12" style='padding: 0px'>
         <ul class="nav nav-tab text-center">
-          <li class="active col-xs-3" style='padding: 0px'><a href="#">Fast Food</a></li>
-          <li class="col-xs-3" style='padding: 0px'><a href="#">Drinks</a></li>
-          <li class="col-xs-3" style='padding: 0px'><a href="#">Chicken</a></li>
-          <li class="col-xs-3" style='padding: 0px'><a href="#">Rice</a></li>
+          <li class="active col-xs-3" style='padding: 0px'><a class='menutab active' href="#">Fast Food</a></li>
+          <li class="col-xs-3" style='padding: 0px'><a class='menutab'href="#">Drinks</a></li>
+          <li class="col-xs-3" style='padding: 0px'><a class='menutab'href="#">Chicken</a></li>
+          <li class="col-xs-3" style='padding: 0px'><a class='menutab'href="#">Rice</a></li>
         </ul>
       </div>
         <!--Carousel Menu-->
           <div class="menu">
               <div id="myCarousel" class="carousel slide">
-                  <div class="carousel-inner">
+                  <div class="carousel-inner" id='foodAlbum'>
                       <div class="item active">
                           <div class="row">
-                              <div class="col-xs-4"><a href="#x"><img src='assets/fastfood/beefBurger.jpg'alt="Image" class="img-responsive carousel-image"></a>
+                              <div class="col-xs-4"><a href="#x"><img src='assets/fastfood/beefBurger.jpg'alt="Image" class="img-responsive carousel-image"><p style="text-align:center; color:#EE562B;">Beef Burger</p></a>
                               </div>
-                              <div class="col-xs-4"><a href="#x"><img src="assets/fastfood/chickenBurger.jpg" alt="Image" class="img-responsive carousel-image"></a>
+                              <div class="col-xs-4"><a href="#x"><img src="assets/fastfood/chickenBurger.jpg" alt="Image" class="img-responsive carousel-image"><p style="text-align:center; color:#EE562B;">Chicken Burger</p></a>
                               </div>
-                              <div class="col-xs-4"><a href="#x"><img src="assets/fastfood/chickenPizza.jpg" alt="Image" class="img-responsive carousel-image"></a>
+                              <div class="col-xs-4"><a href="#x"><img src="assets/fastfood/chickenPizza.jpg" alt="Image" class="img-responsive carousel-image"><p style="text-align:center; color:#EE562B;">Chicken Pizza</p></a>
                               </div>
                           </div>
                       </div>
+
 
                       <div class="item">
                         <div class="row">
-                            <div class="col-xs-4"><a href="#x"><img src="assets/fastfood/chickenBurger.jpg" alt="Image" class="img-responsive carousel-image"></a>
+                            <div class="col-xs-4"><a href="#x"><img src="assets/fastfood/chickenBurger.jpg" alt="Image" class="img-responsive carousel-image"><p style="text-align:center; color:#EE562B;">Chicken Burger</p></a>
                             </div>
-                            <div class="col-xs-4"><a href="#x"><img src="assets/fastfood/chickenPizza.jpg" alt="Image" class="img-responsive carousel-image"></a>
+                            <div class="col-xs-4"><a href="#x"><img src="assets/fastfood/chickenPizza.jpg" alt="Image" class="img-responsive carousel-image"><p style="text-align:center; color:#EE562B;">Chicken Pizza</p></a>
                             </div>
-                            <div class="col-xs-4"><a href="#x"><img src="assets/fastfood/beefBurger.jpg" alt="Image" class="img-responsive carousel-image"></a>
+                            <div class="col-xs-4"><a href="#x"><img src="assets/fastfood/beefBurger.jpg" alt="Image" class="img-responsive carousel-image"><p style="text-align:center; color:#EE562B;">Beef Burger</p></a>
                             </div>
                         </div>
                       </div>
-
-                      <div class="item">
-                          <div class="row">
-                              <div class="col-xs-4"><a href="#x"><img src="assets/fastfood/chickenBurger.jpg" alt="Image" class="img-responsive carousel-image"></a>
-                              </div>
-                              <div class="col-xs-4"><a href="#x"><img src="assets/fastfood/chickenPizza.jpg" alt="Image" class="img-responsive carousel-image"></a>
-                              </div>
-                              <div class="col-xs-4"><a href="#x"><img src="assets/fastfood/beefBurger.jpg" alt="Image" class="img-responsive carousel-image"></a>
-                              </div>
-                          </div>
-                        </div>
-
                   </div>
                     <a class='left carousel-control' href='#myCarousel' role='button' data-slide='prev'>
                       <span class='glyphicon glyphicon-chevron-left' ></span>
@@ -142,12 +131,112 @@
                       <span class='glyphicon glyphicon-chevron-right'></span>
                     </a>
               </div>
-
           </div>
-
       </div>
   </div>
 
 </div>
+<!--body4-->
+<div class='container-fluid'style='padding: 50px'>
+  <div class='text-center drink'>
+    <div class='row'></div>
+    <div class='row'>
+      <div class='col-xs-7'>
+          <h5>Our Happy Customers</h5>
+          <!--Carousel for comments part-->
+              <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                  <!-- Bottom Carousel Indicators -->
+                        <ol class="carousel-indicators">
+                                <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="assets/customers/p1.png" alt="">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="assets/customers/p2.png" alt="">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="assets/customers/p3.png" alt="">
+                                </li>
+                        </ol>
+
+                            <!-- Carousel Slides / Quotes -->
+                            <div class="carousel-inner text-center">
+
+                                <!-- Quote 1 -->
+                                <div class="item active">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <h5>George Richard</h5>
+                                                <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 2 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                              <h5>George Richard</h5>
+                                              <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol</h6>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 3 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                              <h5>George Richard</h5>
+                                              <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dol</h6>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                            <!-- Carousel Buttons Next/Prev -->
+                            <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="glyphicon glyphicon-menu-left"></i></a>
+                            <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="glyphicon glyphicon-menu-right"></i></a>
+              </div>
+      </div>
+      <!--About Menu-->
+      <div class='col-xs-5'>
+        <h5>About Menu</h5>
+        <p>We are menu a little team of 7 members.<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--body5-->
+<div class='container-fluid bg-8 text-center'>
+  <div class='margin-top-little'>
+    <h3>Get our daily food items delivered to your email</h3>
+    <input type="text" value="Your email">
+    <button type='button' class='btn btn-default' id='subscribe'> Subscribe</button>
+    <div style='padding-bottom: 70px'></div>
+</div>
+<!--Footer-->
+<footer class='container-fluid bg-9 text-center'>
+  <div class='row'>
+    <div class='col-xs-6'>
+      <img class='margin-top-little'id='logo'src='assets/footerlogos/logo_white.png'/>
+    </div>
+    <div class='col-xs-6'>
+      <h1 id='brandname'>MENU</h1>
+    </div>
+  </div>
+  <div class='row' style='padding: 10px'>
+      <p>Thats What We Are</p>
+  </div>
+  <div class='row'>
+    <img src='assets/footerlogos/facebook.png'>
+    <img class='footerimg'src='assets/footerlogos/facebook.png'>
+    <img class='footerimg'src='assets/footerlogos/facebook.png'>
+  </div>
+  <div class='row' id='lastsentence'>
+    <small>2016 Menu Restaurant</small>
+  </div>
+</footer>
+
 
 </body>

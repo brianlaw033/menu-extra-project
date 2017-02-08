@@ -36,11 +36,18 @@ body {
   padding-bottom: 10px;
 }
 
+.icon-bar{
+  width: 50px;
+}
 
 .navbar {
    background-color: transparent;
    background: transparent;
    border-color: transparent;
+}
+
+〉.navbar .navbar-inverse .navbar-fixed-top{
+  background:#F15A29;
 }
 
 .navbar-toggle {
@@ -49,6 +56,10 @@ body {
     outline: none;
     padding-left: 20px;
 
+}
+
+.navbar-inverse .navbar-nav>li>a{
+  color: #000;
 }
 
 .navbar-header {
@@ -63,9 +74,9 @@ body {
 .navbar-collapse.collapse.in {
     display: block!important;
 }
-.navbar-nav {
+/*.navbar-nav {
     float: none!important;
-}
+}*/
 .navbar-nav>li {
     float: none;
 }
@@ -117,8 +128,17 @@ body {
   background-size: cover;
 }
 
+.hover:hover{
+  opacity: 0.3;
+}
+
 .bg-7{
   background-image: url('assets/backgrounds/foodsBg.jpg');
+}
+
+.bg-8{
+  background-image: url('assets/backgrounds/subscribe.jpg');
+  color: #ffffff;
 }
 
 .fastfood{
@@ -162,6 +182,10 @@ body {
   background-color: white;
   padding: 50px;
   padding-top: 70px;
+}
+
+#foodAlbum{
+  min-height: inherit;
 }
 
 .carousel-control.left, .carousel-control.right {
@@ -220,21 +244,161 @@ body {
   background-color: #e3e3e3;
 }
 
-.nav-tab >.active{
-  color: #EF5E31;
+.menutab{
+  color: #585858;
+}
+
+.nav-tab .active{
   background-color: #ffffff;
+  color: #EF5E31 !important;
 }
 
 .nav-tab:hover{
   background-color: #E3E3E3;
 }
 
-.bs-example, .new-caption-area {
-    width: 600px;
-    margin: auto;
-    color: #000;
-  }
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+}
 
-  .carousel-caption {
-	color: #000;
+.col-xs-7{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #EAEAEA;
+  border-top: inherit;
+  border-bottom: inherit;
+  border-left: inherit;
+}
+
+.col-xs-5{
+  padding-right: 30px;
+}
+
+.col-xs-5 >h5{
+  color: #EF5E31;
+}
+
+.col-xs-7 > h5{
+  margin-bottom: inherit;
+  color: #EF5E31;
+}
+
+.col-xs-8 > h5{
+  margin-top: inherit;
+}
+
+/* Carousel */
+
+#quote-carousel {
+    padding: 0px;
+    margin-top: 0px;
+    /* Control buttons  */
+    /* Previous button  */
+    /* Next button  */
+    /* Changes the position of the indicators */
+    /* Changes the color of the indicators */
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 0px;
+}
+#quote-carousel .carousel-control.left {
+    left: 2px;
+}
+#quote-carousel .carousel-control.right {
+    right: 0px;
+}
+#quote-carousel .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 100%;
+    opacity: 1;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+#quote-carousel .carousel-indicators .active {
+    background: #333333;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    overflow: hidden;
+}
+.carousel-inner {
+    min-height: 170px;
+}
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+
+/*Subscribe*/
+
+input{
+  color: #ffffff;
+  font-size:10px;
+  font-family: serif;
+  width: 250px;
+  height: 34px;
+  font-size: 14px;
+  padding-left: 20px;
+  background-color: rgba(252, 252, 252, 0.2);
+  border: inherit;
+  border-radius: 2px;
+}
+
+#subscribe{
+  background-color: #EE562B;
+  color: #FFFFFF;
+  border-radius: 0%;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 2px;
+}
+
+/* Footer*/
+.bg-9{
+  background-color: #EE562B;
+}
+
+#logo{
+  float: right;
+}
+
+#brandname{
+  float: left;
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+.bg-9 > .row > .col-xs-6{
+  margin:inherit;
+}
+
+.footerimg{
+  padding-left: 20px;
+}
+
+#lastsentence{
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
