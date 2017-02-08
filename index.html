@@ -4,12 +4,14 @@
       <meta charset='utf-8'>
       <link type='text/css' rel='stylesheet' href='css/bootstrap.css'>
       <link type='text/css' rel='stylesheet' href='style.css'>
+      <link type='text/css' rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
       <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
       <script src='js/bootstrap.js'></script>
       <script type='text/javascript' src='main.js'></script>
       <title>Menu</title>
     </head>
 <body>
+<!--Navbar-->
 <nav class='navbar navbar-inverse navbar-fixed-top'>
   <button type='button' class='pull-left navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
     <span class='sr-only'>Toggle navigation</span>
@@ -23,17 +25,16 @@
     <li><a href='#'>Menu</a> </li>
   </ul>
 </nav>
-
-
-  <div class='bg-1 container-fluid text-center'>
+<!--body1-->
+<div class='bg-1 container-fluid text-center'>
     <img src='assets/logoBig.png' class='margin-top'>
     <br>
     <h3 class='white'>We Provide The Best Food</h3>
     <h3 class='margin white'>At The <b>Right Price</b></h3>
   </div>
-
-<div class='text-center row-fluid'>
-  <div class='col-sm-3 res'>
+<!--Happy-Hour Party-Time Breakfast Lunch Dinner-->
+<div class='text-center'>
+  <div class='col-sm-3'>
     <div class='row bg-2'>
         Happy Hour
     </div>
@@ -56,27 +57,97 @@
 <br>
 <br>
 <br>
-<div class='container margin-top'>
+
+<!-- Fastfood-->
+<div class='container margin-top-xs margin-top-sm margin'>
   <figure class='col-sm-6 fastfood'>
-    <img src='assets/fastFood1.jpg' class='img-responsive'>
-    <img src='assets/fastFood2.jpg' class='img-responsive'>
+    <img src='assets/fastFood1.jpg' class='img-responsive fastfood1'>
+    <img src='assets/fastFood2.jpg' class='img-responsive fastfood1'>
   </figure>
 
-  <div class='col-sm-6 fastfood-content'>
+  <div class='col-sm-6 fastfood-content padding-top-sm padding-top-xs'>
     <h3>Fast Food</h3>
     <p><b>You'll love our delicous fast food</b></p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+    <button type='button' class='btn btn-default'>VIEW GALLERY <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
   </div>
 </div>
-
-<div class='container margin-top'>
-  <figure class='col-sm-6 drink'>
-    <img src='assets/drink1.jpg' class='img-responsive col-sm-6' style='padding: 0px'/>
-    <img src='assets/drink2.jpg' class='img-responsive col-sm-6' style='padding: 0px'/>
+<!--Drinks-->
+<div class='container margin'>
+  <div class='col-sm-6 drink-content text-right margin text-justify-xs text-justify-sm'>
+    <h3>Drinks</h3>
+    <p><b>We also produce delicious drinks</b></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+    <button type='button' class='btn btn-default'>VIEW GALLERY <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+  </div>
+  <figure class='col-sm-6 col-xs-12 drink'>
+    <img src='assets/drink1.jpg' class='img-responsive col-xs-6 drink1' style='padding: 0px'/>
+    <img src='assets/drink2.jpg' class='img-responsive col-xs-6 drink1' style='padding: 0px'/>
   </figure>
 </div>
+<!--body-3-->
+<div class='bg-7 container-fluid'>
+  <div class="container margin-top-little">
+    <!--Navtab for Carousel-->
+      <div class="col-xs-12" style='padding: 0px'>
+        <ul class="nav nav-tab text-center">
+          <li class="active col-xs-3" style='padding: 0px'><a href="#">Fast Food</a></li>
+          <li class="col-xs-3" style='padding: 0px'><a href="#">Drinks</a></li>
+          <li class="col-xs-3" style='padding: 0px'><a href="#">Chicken</a></li>
+          <li class="col-xs-3" style='padding: 0px'><a href="#">Rice</a></li>
+        </ul>
+      </div>
+        <!--Carousel Menu-->
+          <div class="menu">
+              <div id="myCarousel" class="carousel slide">
+                  <div class="carousel-inner">
+                      <div class="item active">
+                          <div class="row">
+                              <div class="col-xs-4"><a href="#x"><img src='assets/fastfood/beefBurger.jpg'alt="Image" class="img-responsive carousel-image"></a>
+                              </div>
+                              <div class="col-xs-4"><a href="#x"><img src="assets/fastfood/chickenBurger.jpg" alt="Image" class="img-responsive carousel-image"></a>
+                              </div>
+                              <div class="col-xs-4"><a href="#x"><img src="assets/fastfood/chickenPizza.jpg" alt="Image" class="img-responsive carousel-image"></a>
+                              </div>
+                          </div>
+                      </div>
 
-<br>
+                      <div class="item">
+                        <div class="row">
+                            <div class="col-xs-4"><a href="#x"><img src="assets/fastfood/chickenBurger.jpg" alt="Image" class="img-responsive carousel-image"></a>
+                            </div>
+                            <div class="col-xs-4"><a href="#x"><img src="assets/fastfood/chickenPizza.jpg" alt="Image" class="img-responsive carousel-image"></a>
+                            </div>
+                            <div class="col-xs-4"><a href="#x"><img src="assets/fastfood/beefBurger.jpg" alt="Image" class="img-responsive carousel-image"></a>
+                            </div>
+                        </div>
+                      </div>
 
+                      <div class="item">
+                          <div class="row">
+                              <div class="col-xs-4"><a href="#x"><img src="assets/fastfood/chickenBurger.jpg" alt="Image" class="img-responsive carousel-image"></a>
+                              </div>
+                              <div class="col-xs-4"><a href="#x"><img src="assets/fastfood/chickenPizza.jpg" alt="Image" class="img-responsive carousel-image"></a>
+                              </div>
+                              <div class="col-xs-4"><a href="#x"><img src="assets/fastfood/beefBurger.jpg" alt="Image" class="img-responsive carousel-image"></a>
+                              </div>
+                          </div>
+                        </div>
+
+                  </div>
+                    <a class='left carousel-control' href='#myCarousel' role='button' data-slide='prev'>
+                      <span class='glyphicon glyphicon-chevron-left' ></span>
+                    </a>
+                    <a class='right carousel-control' href='#myCarousel' role='button' data-slide='next'>
+                      <span class='glyphicon glyphicon-chevron-right'></span>
+                    </a>
+              </div>
+
+          </div>
+
+      </div>
+  </div>
+
+</div>
 
 </body>
