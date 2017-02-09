@@ -180,7 +180,7 @@ body {
 
 .menu{
   background-color: white;
-  padding: 50px;
+  padding-bottom: 5%;
   padding-top: 70px;
 }
 
@@ -191,6 +191,18 @@ body {
 .carousel-control.left, .carousel-control.right {
     background-image: none;
     color: #EF5E31;
+    opacity: 1;
+    text-shadow: none;
+}
+
+.body3l{
+  bottom: 25%;
+  right: 50%;
+}
+
+.body3r{
+  bottom: 25%;
+  left: 70%;
 }
 
 .text-justify-xs {
@@ -257,11 +269,6 @@ body {
   background-color: #E3E3E3;
 }
 
-.carousel-caption {
-    position: relative;
-    left: auto;
-    right: auto;
-}
 
 .col-xs-7{
   border-style: solid;
@@ -302,17 +309,15 @@ body {
 }
 #quote-carousel .carousel-control {
     background: none;
-    color: #CACACA;
+    color: #EF5E31;
     font-size: 2.3em;
     text-shadow: none;
     margin-top: 0px;
 }
 #quote-carousel .carousel-control.left {
-    left: 2px;
+    height: -50px;
 }
-#quote-carousel .carousel-control.right {
-    right: 0px;
-}
+
 #quote-carousel .carousel-indicators {
     right: 50%;
     top: auto;
@@ -350,6 +355,16 @@ body {
     margin-right: 10px;
 }
 
+.body4l{
+  top: 65%;
+  opacity: 1;
+  left:13%;
+}
+
+.body4r{
+  top: 65%;
+  opacity: 1;
+}
 
 /*Subscribe*/
 
