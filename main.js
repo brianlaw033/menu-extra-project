@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  /*navbar-background*/
 $('#navPress').click(function shownoshow(){
   var myVar = $('#navToggle').hasClass('in');
   if (myVar === true){
@@ -12,6 +13,17 @@ $('#navPress').click(function shownoshow(){
 })
 })
 
+/*Visitor Counting(Fake)*/
+function doSetTimeout(i) {
+  setTimeout(function() {$('#result').replaceWith('<p id="result">Visitors (by Google Analytics) :'+i+'</p>');}, i*1000);
+}
+
+$(document).ready(function fakeVisitors(){
+  for (var i = 1; i <= 689; i++)
+    doSetTimeout(i);
+})
+
+//Carousel Menu
 $('.carousel .item').each(function(){
   var next = $(this).next();
   if (!next.length) {
