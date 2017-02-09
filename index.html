@@ -2,15 +2,15 @@
 <html>
     <head>
       <meta charset='utf-8'>
-      <link type='text/css' rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-      <link type='text/css' rel='stylesheet' href='style.css'>
-      <link type='text/css' rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+      <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+      <link rel='stylesheet' href='style.css'>
+      <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
       <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
       <script src='js/bootstrap.js'></script>
-      <script type='text/javascript' src='main.js'></script>
+      <script src='main.js'></script>
       <title>Menu</title>
 
-<!--Google Analytics code-->
+      <!--Google Analytics code-->
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -38,30 +38,30 @@
   </ul>
 </nav>
 <!--body1-->
-<div class='bg-1 container-fluid text-center'>
-    <img src='assets/logoBig.png' class='margin-top'>
+<div class='bg-1 container-fluid text-center margin '>
+    <img src='assets/logoBig.png' style='padding-top: 100px'>
     <br>
-    <h3 class='white'>We Provide The Best Food</h3>
-    <h3 class='margin white'>At The <b>Right Price</b></h3>
+    <h3 class='slogon'>We Provide The Best Food</h3>
+    <h3 class='slogon'>At The <b>Right Price</b></h3>
   </div>
 <!--Happy-Hour Party-Time Breakfast Lunch Dinner-->
 <div class='text-center'>
-  <div class='col-sm-3 '>
-    <div class='row bg-2 hover'>
-        Happy Hour
-    </div>
-    <div class='row bg-3 hover'>
-        Party Time
-    </div>
+  <div class='col-sm-3 ' style='padding: 0px;'>
+    <button type="button" class="btn btn-default row happyTime" id='happyHour'data-toggle="modal" data-target="#myModal">
+      Happy Hour
+    </button>
+    <button type="button" class="btn btn-default row happyTime" id='partyTime'data-toggle="modal" data-target="#myModal" style='color: #ffffff' >
+      Party Time
+    </button>
   </div>
-  <div class='col-sm-3 bg-4 text-center hover'>
-    Breakfast
+  <div class='col-sm-3 bar' id='breakfast'>
+    <p>Breakfast</p>
   </div>
-  <div class='col-sm-3 bg-5 hover'>
-    Lunch
+  <div class='col-sm-3 bar' id='lunch'>
+    <p>Lunch</p>
   </div>
-  <div class='col-sm-3 bg-6 hover'>
-    Dinner
+  <div class='col-sm-3 bar' id='dinner'>
+    <p>Dinner</p>
   </div>
 </div>
 
@@ -71,13 +71,13 @@
 <br>
 
 <!-- Fastfood-->
-<div class='container margin-top-xs margin-top-sm margin'>
-  <figure class='col-sm-6 fastfood'>
-    <img src='assets/fastFood1.jpg' class='img-responsive fastfood1'>
-    <img src='assets/fastFood2.jpg' class='img-responsive fastfood1'>
+<div class='container ff-top-xs ff-top-sm margin'>
+  <figure class='col-sm-6 border'>
+    <img src='assets/fastFood1.jpg' class='img-responsive fastfood-img'>
+    <img src='assets/fastFood2.jpg' class='img-responsive fastfood-img'>
   </figure>
 
-  <div class='col-sm-6 fastfood-content padding-top-sm padding-top-xs'>
+  <div class='col-sm-6 ffContent-justify-sm ffContent-justify-xs'>
     <h3>Fast Food</h3>
     <p><b>You'll love our delicous fast food</b></p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
@@ -86,17 +86,18 @@
 </div>
 <!--Drinks-->
 <div class='container margin'>
-  <div class='col-sm-6 drink-content text-right margin text-justify-xs text-justify-sm'>
+  <div class='col-sm-6 text-right margin dText-justify-xs dText-justify-sm'>
     <h3>Drinks</h3>
     <p><b>We also produce delicious drinks</b></p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
     <button type='button' class='btn btn-default'>VIEW GALLERY <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
   </div>
-  <figure class='col-sm-6 col-xs-12 drink'>
-    <img src='assets/drink1.jpg' class='img-responsive col-xs-6 drink1' style='padding: 0px'/>
-    <img src='assets/drink2.jpg' class='img-responsive col-xs-6 drink1' style='padding: 0px'/>
+  <figure class='col-sm-6 col-xs-12 border'>
+    <img src='assets/drink1.jpg' class='img-responsive col-xs-6 drinkImg' style='padding: 0px'/>
+    <img src='assets/drink2.jpg' class='img-responsive col-xs-6 drinkImg' style='padding: 0px'/>
   </figure>
 </div>
+
 <!--body-3-->
 <div class='bg-7 container-fluid'>
   <div class="container margin-top-little" style='padding: 50px'>
@@ -110,7 +111,7 @@
         </ul>
       </div>
         <!--Carousel Menu-->
-          <div class="menu">
+          <div id="menu">
               <div id="myCarousel" class="carousel slide ">
                   <div class="carousel-inner" id='foodAlbum'>
                       <div class="item active">
@@ -150,7 +151,7 @@
 </div>
 <!--body4-->
 <div class='container-fluid'style='padding: 50px'>
-  <div class='text-center drink'>
+  <div class='text-center'>
     <div class='row'></div>
     <div class='row'>
       <div class='col-xs-7'>
@@ -211,7 +212,7 @@
               </div>
       </div>
       <!--About Menu-->
-      <div class='col-xs-5'>
+      <div class='col-xs-5' style='padding-left: 40px'>
         <h5>About Menu</h5>
         <p>We are menu a little team of 7 members.<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
       </div>
@@ -221,9 +222,9 @@
 </div>
 <!--body5-->
 <div class='container-fluid bg-8 text-center'>
-  <div class='margin-top-little'>
+  <div style='padding-top: 50px'>
     <h3>Get our daily food items delivered to your email</h3>
-    <input type="text" value="Your email">
+    <input type="text" placeholder="Your email">
     <button type='button' class='btn btn-default' id='subscribe'> Subscribe</button>
     <div style='padding-bottom: 70px'></div>
   </div>
@@ -232,7 +233,7 @@
 <footer class='container-fluid bg-9 text-center'>
   <div class='row'>
     <div class='col-xs-6'>
-      <img class='margin-top-little'id='logo'src='assets/footerlogos/logo_white.png'/>
+      <img style='padding-top: 50px'id='logo'src='assets/footerlogos/logo_white.png'/>
     </div>
     <div class='col-xs-6'>
       <h1 id='brandname'>MENU</h1>
@@ -253,6 +254,27 @@
 <!--Fake Visitor Counting-->
 <div class='container-fluid text-right' id='counting'>
   <p id='result'>Visitors (by Google Analytics) : 0</p>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 </body>

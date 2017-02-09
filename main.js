@@ -23,7 +23,7 @@ $(document).ready(function fakeVisitors(){
     doSetTimeout(i);
 })
 
-//Carousel Menu
+//Carousel Function
 $('.carousel .item').each(function(){
   var next = $(this).next();
   if (!next.length) {

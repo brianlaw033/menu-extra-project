@@ -1,9 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
+/*Global css*/
+
 body {
   font-family: 'Quicksand';
-
 }
+
+.margin{
+  padding-bottom: 70px;
+}
+
+.btn{
+  color: #EF5E31;
+  border-color: #EF5E31;
+}
+
+/*Section 1*/
 
 .bg-1{
   background-image: url('assets/backgrounds/landing.jpg');
@@ -14,31 +26,13 @@ body {
 
 }
 
-.white{
+.slogon{
   color: #ffffff;
   line-height: 0.4;
   font-weight: lighter;
 }
 
-.margin-top{
-  padding-top: 100px;
-}
-
-.margin-top-little{
-  padding-top: 50px;
-}
-
-.margin{
-  padding-bottom: 70px;
-}
-
-.drink-sm .margin{
-  padding-bottom: 10px;
-}
-
-.icon-bar{
-  width: 50px;
-}
+/*Navigation*/
 
 .navbar {
    background-color: transparent;
@@ -46,94 +40,84 @@ body {
    border-color: transparent;
 }
 
-〉.navbar .navbar-inverse .navbar-fixed-top{
-  background:#F15A29;
-}
-
 .navbar-toggle {
-    display: block;
+    display: block; /*remains navbar-toggle no matter wt screen size is*/
     border: none;
     outline: none;
     padding-left: 20px;
-
 }
 
 .navbar-inverse .navbar-nav>li>a{
   color: #000;
 }
 
-.navbar-header {
-    float: none;
-}
-.navbar-toggle {
-    display: block;
-}
 .navbar-collapse.collapse {
+  /*remains navbar-toggle no matter wt screen size is*/
     display: none!important;
 }
 .navbar-collapse.collapse.in {
+  /*remains navbar-toggle no matter wt screen size is*/
     display: block!important;
 }
-/*.navbar-nav {
-    float: none!important;
-}*/
+
 .navbar-nav>li {
+  /*causing the content of the navbar to be vertical
+  removing becomes horizontal*/
     float: none;
 }
 
 
-.bg-2{
-  background-color: #E4E5E7;
-  padding-top: 20px;
-  padding-bottom: 20px;
+/*Happy Party Breakfast Lunch Dinner*/
+
+.happyTime{
+  margin: inherit;
+  border: inherit;
+  border-radius: 0;
+  width: 100%;
+  font-size: 15px;
+  height:60px;
 }
 
-.bg-3{
-  background-color: #EE562B;
-  color: #ffffff;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.bg-4{
-  background-image: url('assets/foodtop/breakfast.jpg');
-  color: white;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.bg-5{
-  background-image: url('assets/foodtop/lunch.jpg');
-  color: white;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.bg-6{
-  background-image: url('assets/foodtop/dinner.jpg');
-  color: white;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.hover:hover{
+.happyTime:hover{
   opacity: 0.3;
 }
 
-.bg-7{
-  background-image: url('assets/backgrounds/foodsBg.jpg');
+.bar{
+  height: 120px;
+  color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bar:hover{
+  opacity: 0.3;
+}
+
+#happyHour{
+  background-color: #E4E5E7;
+}
+
+#partyTime{
+  background-color: #EE562B;
+}
+
+
+.bar>p{
+  padding-top: 50px;
+}
+
+#breakfast{
+  background-image: url('assets/foodtop/breakfast.jpg');
+}
+
+#lunch{
+  background-image: url('assets/foodtop/lunch.jpg');
+}
+
+#dinner{
+  background-image: url('assets/foodtop/dinner.jpg');
 }
 
 .bg-8{
@@ -141,44 +125,70 @@ body {
   color: #ffffff;
 }
 
-.fastfood{
+/*Fast Food & Drinks*/
+
+/*Fastfood*/
+
+.ff-top-xs{
+  padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .ff-top-sm{
+      padding-top: 100px;
+    }
+}
+
+.border{
+  /*Making a White Border with shadow*/
   padding-top: 15px;
   padding-bottom: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.fastfood1{
+.fastfood-img{
   width: 100%;
-
 }
 
-.fastfood-content{
+.ffContent-justify-xs{
+  padding-top: 20px;
   padding-left:40px;
 }
-.drink{
-  padding-top: 15px;
-  padding-bottom: 15px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+@media (min-width: 768px) {
+    .ffContent-justify-sm{
+      padding-top: 0px;
+      padding-left:40px;
+    }
 }
 
-.drink1{
+/*Drinks*/
+
+.dText-justify-xs {
+    text-align: left;
+    padding-left:40px;
+    padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+    .dText-justify-sm {
+     text-align: right;
+     padding-bottom: 0px;
+     padding-right:40px;
+    }
+}
+
+.drinkImg{
   max-width: 440px;
 }
 
-.drink-content{
-  padding-right:40px;
+/*Carousel Menu*/
+
+.bg-7{
+  background-image: url('assets/backgrounds/foodsBg.jpg');
 }
 
-.btn{
-  color: #EF5E31;
-  border-color: #EF5E31;
-}
-
-.spread{
-  width:100%;
-}
-
-.menu{
+#menu{
   background-color: white;
   padding-bottom: 5%;
   padding-top: 70px;
@@ -203,49 +213,6 @@ body {
 .body3r{
   bottom: 25%;
   left: 70%;
-}
-
-.text-justify-xs {
-    text-align: left;
-    padding-left:40px;
-    padding-bottom: 50px;
-}
-
-@media (min-width: 768px) {
-    .text-justify-sm {
-     text-align: right;
-     padding-bottom: 0px;
-    }
-}
-
-.padding-top-xs{
-  padding-top: 20px;
-}
-
-@media (min-width: 768px) {
-    .padding-top-sm{
-      padding-top: 0px;
-    }
-}
-
-.margin-top-xs{
-  padding-top: 20px;
-}
-
-@media (min-width: 768px) {
-    .margin-top-sm{
-      padding-top: 100px;
-    }
-}
-
-.drink-xs{
-  padding-top: 20px;
-}
-
-@media (min-width: 768px) {
-    .drink-sm{
-      padding-top: 50px;
-    }
 }
 
 .carousel-image {
@@ -296,17 +263,13 @@ body {
   margin-top: inherit;
 }
 
-/* Carousel */
+/* Carousel Quote*/
 
 #quote-carousel {
     padding: 0px;
     margin-top: 0px;
-    /* Control buttons  */
-    /* Previous button  */
-    /* Next button  */
-    /* Changes the position of the indicators */
-    /* Changes the color of the indicators */
 }
+
 #quote-carousel .carousel-control {
     background: none;
     color: #EF5E31;
