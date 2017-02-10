@@ -38,6 +38,8 @@ body {
    background-color: transparent;
    background: transparent;
    border-color: transparent;
+   position: absolute; /*overlapping the navbar with the bg-1 div*/
+   width: 100%;
 }
 
 .navbar-toggle {
@@ -129,16 +131,6 @@ body {
 
 /*Fastfood*/
 
-.ff-top-xs{
-  padding-top: 20px;
-}
-
-@media (min-width: 768px) {
-    .ff-top-sm{
-      padding-top: 100px;
-    }
-}
-
 .border{
   /*Making a White Border with shadow*/
   padding-top: 15px;
@@ -190,8 +182,8 @@ body {
 
 #menu{
   background-color: white;
-  padding-bottom: 5%;
-  padding-top: 70px;
+  padding-bottom: 3%;
+  padding-top: 8%;
 }
 
 #foodAlbum{
@@ -232,10 +224,9 @@ body {
   color: #EF5E31 !important;
 }
 
-.nav-tab:hover{
-  background-color: #E3E3E3;
+.menutab:hover .menutab:focus{
+  color: #585858;
 }
-
 
 .col-xs-7{
   border-style: solid;
@@ -304,6 +295,13 @@ body {
     opacity: 1;
     overflow: hidden;
 }
+
+@media (max-width: 620px) {
+    .carousel-indicators-xs{
+      display: none;
+    }
+}
+
 .carousel-inner {
     min-height: 170px;
 }
@@ -351,9 +349,14 @@ input{
   padding-left: 50px;
   padding-right: 50px;
   border-radius: 2px;
+  margin-left: 20px;
 }
 
 /* Footer*/
+footer{
+  color: #ffffff;
+}
+
 .bg-9{
   background-color: #EE562B;
 }
